@@ -15,15 +15,11 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
-
-version: "3.8"
-
 services:
   zomboid-dedicated-server:
     build:
       context: .
       dockerfile: docker/zomboid-dedicated-server.Dockerfile
-    image: "docker.io/renegademaster/zomboid-dedicated-server:latest"
     container_name: zomboid-dedicated-server
     restart: "no"
     ports:
